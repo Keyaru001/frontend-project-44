@@ -1,13 +1,13 @@
-import { getRandom } from '../utils.js'
+import { getRandom } from '../utils.js';
 
-function startEvent () {
-  const num = getRandom(100)
-  const quest = `${num}`
-  let validAnswer = 'no'
+function startEvent() {
+  const num = getRandom(100);
+  const quest = `${num}`;
+  let validAnswer = 'no';
   if (num % 2 === 0) {
-    validAnswer = 'yes'
+    validAnswer = 'yes';
   }
-  return [quest, validAnswer]
+  return [quest, validAnswer];
 }
-const lable = 'Answer "yes" if the number is even, otherwise answer "no"'
-export default { startEvent, lable }
+const lable = 'Answer "yes" if the number is even, otherwise answer "no"';
+export default { startEvent, lable };
